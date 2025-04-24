@@ -1,0 +1,15 @@
+config {
+  type: "table",                  // Full refresh
+  name: "sales_data",             // Target table name
+  schema: "transformed_dataset"   // Target dataset name
+}
+
+SELECT
+  sale_id,
+  product_name,
+  quantity,
+  sale_amount,
+  sale_date,
+  region
+FROM
+  `gcp-sfpl-etl-demo-project6.dataform.raw_sales_data`;
