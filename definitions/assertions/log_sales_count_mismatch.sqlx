@@ -1,4 +1,4 @@
--- definitions/assertions/log_sales_count_mismatch.sqlx
+
 config {
   type: "table",
   tags: ["assertion_log"]
