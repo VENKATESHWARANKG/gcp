@@ -1,7 +1,7 @@
 config {
   type: "table",                  // Full refresh
   name: "sales_data",             // Target table name
-  schema: "transformed_dataset"   // Target dataset name
+  schema: "dataform"   // Target dataset name
 }
 
 SELECT
