@@ -1,0 +1,6 @@
+{
+    "defaultDatabase": "gcp-sfpl-etl-demo-project6",
+    "defaultSchema": "dataform",
+    "defaultLocation": "us",
+    "warehouse": "bigquery"
+  }
