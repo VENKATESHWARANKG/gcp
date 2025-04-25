@@ -1,0 +1,17 @@
+-- definitions/assertions/log_sales_count_mismatch.sqlx
+config {
+  type: "table",
+  tags: ["assertion_log"]
+}
+
+SELECT
+  CURRENT_TIMESTAMP() AS failure_time,
+  'Row count mismatch between raw_sales_data and sales_data' AS error_message,
+  count_raw,
+  count_processed
+FROM (
+  SELECT
+    (SELECT COUNT(*) FROM ${ref("raw_sales_data")}) AS count_raw,
+    (SELECT COUNT(*) FROM ${ref("sales_data")}) AS count_processed
+) comparison
+WHERE count_raw != count_processed
