@@ -1,0 +1,4 @@
+default_database: gcp-sfpl-etl-demo-project6
+default_schema: dataform
+default_location: us
+warehouse: bigquery
