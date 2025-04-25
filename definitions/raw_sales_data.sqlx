@@ -1,0 +1,5 @@
+config {
+  type: "declaration",
+  schema: "dataform",  -- Adjust schema if needed
+  name: "raw_sales_data"
+}
