@@ -1,5 +1,5 @@
 config {
-  type: "declaration",                  // Full refresh
+  type: "table",                  // Full refresh
   name: "sales_data",             // Target table name
   schema: "transformed_dataset"   // Target dataset name
 }
